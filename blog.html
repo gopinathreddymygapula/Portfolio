@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Data Science Blog</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <section id="blog">
+        <h2>Data Science Blog</h2>
+
+        <article>
+            <h3>Exploring Linear Regression in Data Science</h3>
+            <p>In this blog post, I'll take you through the basics of linear regression in the context of data science.
+                Linear regression is a fundamental statistical method used for predictive modeling and understanding the
+                relationship between variables.</p>
+
+            <h4>Introduction to Linear Regression</h4>
+            <p>Linear regression is a supervised learning algorithm used for predicting a continuous outcome variable
+                (dependent variable) based on one or more predictor variables (independent variables). The relationship
+                between the variables is assumed to be linear.</p>
+
+            <h4>Data Analysis and Visualization</h4>
+            <p>Let's explore the famous Boston Housing dataset and perform some exploratory data analysis (EDA) to
+                understand the distribution of variables. I'll use R for this analysis, and here are some code snippets:
+            </p>
+
+            <pre>
+            <code>
+# Load the Boston Housing dataset
+data(boston)
+
+# Summary statistics
+summary(boston)
+
+# Scatter plot (example, adjust as needed)
+plot(boston$rm, boston$medv, main="Scatter Plot", xlab="Average Number of Rooms", ylab="Median Value of Owner-Occupied Homes")
+
+# Save the plot as an image
+png("scatter_plot.png")
+plot(boston$rm, boston$medv, main="Scatter Plot", xlab="Average Number of Rooms", ylab="Median Value of Owner-Occupied Homes")
+dev.off()
+imagesrc <- "scatter_plot.png"
+            </code>
+            </pre>
+            <img src="images/eda.jpeg" alt="Scatter Plot" />
+            <h4>Narrative</h4>
+            <p>As we delve into the dataset, it's crucial to understand the problem we're trying to solve. Linear
+                regression allows us to model the relationship between variables and make predictions. Through careful
+                analysis and visualization, we gain insights into the data patterns.</p>
+
+            <h4>Conclusion</h4>
+            <p>Linear regression is a powerful tool in the data scientist's toolbox. This blog post provides a glimpse
+                into its application, from data analysis to model building. Stay tuned for more explorations into the
+                fascinating world of data science!</p>
+
+    
+
+        </article>
+
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h3>Contact Information</h3>
+
+                <p>Email: gopinathreddymygapula@my.unt.edu</p>
+                <p>Phone: +91(9963536782)</p>
+            </div>
+            <div class="footer-social">
+                <h3>Connect with Me</h3>
+                <ul>
+                    <li><a href="https://github.com/gopinathreddymygapula" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 My Data Science Portfolio | Designed by Gopinath Mygapula</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
